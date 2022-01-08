@@ -6,6 +6,11 @@ public class StandardError {
 	private Integer status;
 	private String error;
 
+	public StandardError() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public StandardError(Long timestamp, Integer status, String error) {
 		super();
 		this.timestamp = timestamp;
