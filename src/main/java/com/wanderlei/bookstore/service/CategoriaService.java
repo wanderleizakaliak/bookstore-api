@@ -1,5 +1,6 @@
 package com.wanderlei.bookstore.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,6 +26,13 @@ public class CategoriaService {
 	}
 
 	public List<Categoria> findAll() {
+		List<Boolean> list = new ArrayList<>();
+		list.add(true);
+		list.add(Boolean.parseBoolean("FalSe"));
+		list.add(Boolean.TRUE);
+		System.out.println(list.size());
+		System.out.println(list.get(1) instanceof Boolean);
+				
 		return repository.findAll();
 	}
 
